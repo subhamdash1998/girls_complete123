@@ -25,6 +25,7 @@ In a python virtual environment, run:
 - `python manage.py migrate blog`
 - `python manage.py createsuperuser` (to create user that you'll use to log in)
 
+
 ### Run the application
 
 ```bash
