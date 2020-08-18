@@ -44,6 +44,19 @@ class PostTestCase(TestCase):
         self.assertEqual(post1.title, "Just testing")
         self.assertEqual(post1.text, "Repeated tests make the app foul-proof")
 
+
+        def test_valid_form_data(self):
+        form = PostForm({
+            'title': "Hey",
+            'text': "Repeated tests make",
+        })
+        self.assertTrue(form.is_valid())
+        post1 = form.save(commit=False)
+        post1.author = self.user1
+        post1.save()
+        self.assertEqual(post1.title, "Hey")
+        self.assertEqual(post1.text, "Repeated tests make the app foul-proof")
+
     def test_blank_form_data(self):
         form = PostForm({})
         self.assertFalse(form.is_valid())
