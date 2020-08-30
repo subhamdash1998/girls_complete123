@@ -2,6 +2,9 @@
 
 ## Differences
 
+# hey iam in beta
+# part:1
+
 
 Expressing my authorial rights, some things are a bit different from the tutorial:
 
