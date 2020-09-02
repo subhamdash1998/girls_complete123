@@ -6,6 +6,11 @@
 # part:1
 
 
+# added for abc
+
+# added for cde 
+# a new line
+
 Expressing my authorial rights, some things are a bit different from the tutorial:
 
 - A `Log in` and `Log out` links on the page header
